@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="products images/LOGO.png" type="png">
+  <title>Ocean Gate</title>
+    <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEJ6vT1Xz5mZQONiNX3pQaXDTmZA1Qhe/G96HzZkeXvEDvsz7bK60y5YpQf6Y" crossorigin="anonymous">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqydsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/font-all.min.css">
+  <!-- font awesome cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css"
+    integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+<!-- Custom css -->
+<link rel="stylesheet" href="style.css">
+<!-- Custom css -->
+  <style>
+    .product-image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .product-specs ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .product-specs li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header"></header>
+  <!-- Product Detail Section -->
+<div class="container "> <h1 class="m-2 text-primary">Sandisk</h1>
+  <div class="row">
+    <!-- Product Image Section -->
+    <div class="row g-4">
+      <!-- Product Image Section -->
+      <div class="col-md-6 text-center">
+        <img id="pimage" height="400" width="400" alt="Product Image" class="img-fluid">
+      </div>
+      
+      <!-- Product Information Section -->
+      <div class="col-md-6">
+        <h1 id="ptitle"></h1>
+        <h3 class="text" id="pprice">$199.99</h3>
+        <p id="pdetails" class="fs-5 my-3">Details</p>
+        <a class="btn btn-primary btn-lg" id="downloaddetails">Download Details</a>
+      </div>
+    </div>
+
+    <!-- Reviews and Shop Location Section -->
+    <div class="row mt-5">
+      <!-- Customer Reviews -->
+      <div class="col-md-6">
+        <h2 class="fs-4">Customer Reviews</h2>
+        <textarea class="form-control" placeholder="Share your reviews" rows="5"></textarea>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      </div>
+
+      <!-- Shop Location -->
+      <div class="col-md-6">
+        <h2 class="fs-4">Shop Location</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28954.513146176076!2d67.151825!3d24.887264!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339999415e0c3%3A0x36742eee0fd9c291!2sAptech%20Metro%20Star%20Gate!5e0!3m2!1sen!2sus!4v1728022293375!5m2!1sen!2sus"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+ 
+    <!-- Footer Section -->
+    <footer id="footer">
+    </footer>
+    <!-- Footer Section -->
+
+<script src="js/sandisk.js"></script>
+  <script src="js/repeat.js"></script>
+  
+  <script>
+                    let url = new URL(window.location.href);
+let paraid = url.searchParams.get("id");
+
+if (paraid !== null && data[paraid]) {
+    document.getElementById("ptitle").innerText = data[paraid].title;
+    document.getElementById("pprice").innerText = data[paraid].price;
+    document.getElementById("pdetails").innerText = data[paraid].desc;
+    document.getElementById("pimage").setAttribute("src", data[paraid].img);
+
+    // Set the download link for the Word file
+    document.getElementById("downloaddetails").setAttribute("href", data[paraid].doc);
+    document.getElementById("downloaddetails").setAttribute("download", data[paraid].doc.split('/').pop());
+} else {
+    document.getElementById("ptitle").innerText = "Product Not Found";
+    document.getElementById("pprice").innerText = "";
+    document.getElementById("pdetails").innerText = "The product you are looking for does not exist.";
+    document.getElementById("pimage").setAttribute("src", "");
+
+    document.getElementById("downloaddetails").innerText = "Details Not Available";
+    document.getElementById("downloaddetails").classList.add("disabled");
+    document.getElementById("downloaddetails").removeAttribute("href");
+}
+      </script>
+      <!-- Product Reviews Section -->
+     
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz4fnFO9gyb7AF3QbXBPYADlRGp2fMjM3zdpP4g5ha7tff5t8yJt/k9R2w5"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-pzjw8f+ua7Kw1TIq0n5u5z5PU7iYqMByX19q3s0K95/z5JZoyp"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

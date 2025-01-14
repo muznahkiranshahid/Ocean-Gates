@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  line-height: 1.6;
+  font-family: "Roboto Slab", serif;
+}
+.bg{
+  background-color: #cfe2ff;
+}
+.text{
+  color: #3a5ecb;
+  font-weight: 600;
+}
+.custom-width {
+  width: 79%;
+}
+/* HEADER */
+.nav-link, .dropdown-toggle {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  color: #3a5ecb;
+}
+
+.nav-link::after, .dropdown-toggle::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3a5ecb;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after, .dropdown-toggle:hover::after {
+  width: 100%;
+}
+.nav-link:hover, .dropdown-toggle:hover {
+  color: #3a5ecb;
+  font-weight: bolder;
+}
+.dropdown-toggle:focus, 
+.dropdown-toggle:active, 
+.dropdown-toggle.show {
+  color: #3a5ecb !important;
+  text-decoration: none; 
+}
+.brand-dropdown li a:hover {
+  color: #3a5ecb;
+}
+
+/* HEADER */
+/* FOOTER */
+.footer-link{
+  text-decoration: none;
+}
+.footer-link:hover{
+text-decoration: solid #3a5ecb underline;
+  font-weight: bold;
+  color: #3a5ecb;
+}
+/* FOOTER */
+/* Card Container */
+.custom-card {
+  padding: 13px;
+  position: relative;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+  transition: 0.2s ease-in;
+}
+.custom-card:hover {
+  background-color: #cfe2ff
+  ;
+  transform: scale(1.02);
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Image */
+.card-img {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.card-img img {
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.2s ease-in;
+}
+
+.card-img:hover {
+  transition: 0.2s ease-in;
+  transform: scale(1.02);
+}
+
+/* Card Title and Text */
+.card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 15px;
+}
+
+.card-desc {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 08px;
+}
+
+.card-price {
+  font-size: 1.10rem;
+  font-weight: bold;
+  margin-left: 55px;
+  color: #3a5ecb;
+}
+
+/* Buttons Styling */
+.card-buttons button {
+  border: none;
+  border-radius: 30px;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 0.9rem;
+  margin-left: 55px;
+}
+.btn-cart {
+  color: #3a5ecb;
+  border: 1px solid #3a5ecb;
+  background-color: #cfe2ff;
+}
+
+.btn-cart:hover {
+  background-color: #3a5ecb;
+  color: white;
+  font-weight: 400;  
+}
+.text-truncate-2 {
+  display: -webkit-box;
+  -webkit-line-clamp : 2; 
+  -webkit-box-orient: vertical;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+
+/* FAQs PAGE */
+.formfaq {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #cfe2ff;
+  border: 3px solid #cfe2ff;
+  border-radius: 8px;
+}
+.form-header {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3a5ecb;
+}
+.accordion-button{
+  height: 80px;
+  font-weight: 600;
+}
+.accordion-button:hover{
+  background-color: #cfe2ff;
+  border: solid  #3a5ecb  2px;
+}
+/* SITEMAP */
+.sitemap-link a:hover{
+color:white;
+background-color:#3a5ecb;
+font-style: oblique;
+}
+.sitemap-border{
+  border: solid #3a5ecb 2px !important;
+}
+.sitemap-brands:hover{
+border: white;
+}
+
+/* CONTACT US */
+.contact {
+  padding: 50px;
+  background-color: #cfe2ff;
+}
+.contact h1 {
+  font-size: 55px;
+  font-weight: 550;
+  color: #3a5ecb;
+}
+.contact p {
+  color: #333;
+}
+.contactform input,
+.contactform textarea {
+  border-bottom: 2px solid #333 !important;
+}
+#mainbox {
+  border-radius: 20px;
+  border: 5px solid #3a5ecb;
+}
+.inputBox span {
+  color: #666;
+}
+
