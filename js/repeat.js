@@ -2,7 +2,7 @@ document.getElementById(
   "header"
 ).innerHTML = `  
             <nav class="navbar navbar-expand-lg bg-primary-subtle" height="50">
-                <a class="navbar-brand" href="home.html">
+                <a class="navbar-brand" href="index.html">
                     <img src="products images/LOGO-removebg-preview.png" alt="Logo" width="80" height="50"
                         class="d-inline-block ms-5">
                 </a>
@@ -13,7 +13,7 @@ document.getElementById(
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item fs-5 fw-medium actve">
-                            <a class="nav-link" href="home.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item fs-5 fw-medium ">
                             <a class="nav-link" href="product.html">Products</a>
@@ -63,7 +63,7 @@ document.getElementById("footer").innerHTML = `<div class="pt-4 bg-primary-subtl
                         <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
                             <h5 class="h2 text">Quick Links</h5>
                             <ul class="list-unstyled">
-                                <li><a href="home.html" class=" text-dark footer-link">Home
+                                <li><a href="index.html" class=" text-dark footer-link">Home
                                     </a></li>
                                 <li><a href="product.html" class=" text-dark footer-link">Products
                                     </a></li>
